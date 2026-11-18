@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emi — Graphic Designer</title>
+  <meta name="description" content="Portofoli i Emi — ilustrim, dizajn marketingu, broshura dhe logo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#" class="logo">Emi<span>.</span></a>
+    <nav>
+      <a href="#punet">Punët</a>
+      <a href="#sherbimet">Shërbimet</a>
+      <a href="#rreth">Rreth meje</a>
+      <a href="#kontakt" class="btn-small">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">Graphic Designer · Tiranë</p>
+      <h1>Dizajn që e bën<br>markën tënde <em>të paharrueshme</em>.</h1>
+      <p class="lead">Ilustrime, materiale marketingu, broshura dhe logo për biznese që duan të duken mirë dhe të komunikojnë qartë.</p>
+      <div class="hero-actions">
+        <a href="#punet" class="btn">Shiko punët</a>
+        <a href="#kontakt" class="btn btn-ghost">Më shkruaj</a>
+      </div>
+    </section>
+
+    <!-- PUNËT -->
+    <section id="punet" class="section">
+      <div class="section-head">
+        <h2>Punët e zgjedhura</h2>
+        <div class="filters">
+          <button class="filter active" data-filter="all">Të gjitha</button>
+          <button class="filter" data-filter="logo">Logo</button>
+          <button class="filter" data-filter="ilustrim">Ilustrim</button>
+          <button class="filter" data-filter="marketing">Marketing</button>
+        </div>
+      </div>
+
+      <!-- Për të shtuar një punë: kopjo një <article> dhe ndrysho foton, titullin dhe kategorinë -->
+      <div class="grid">
+        <article class="card" data-category="logo">
+          <div class="thumb" style="--c1:#f4c95d;--c2:#e07a5f">
+            <!-- <img src="images/logo-1.jpg" alt="Logo për kafenenë X"> -->
+          </div>
+          <h3>Identitet vizual për kafene</h3>
+          <p>Logo · Illustrator</p>
+        </article>
+
+        <article class="card" data-category="ilustrim">
+          <div class="thumb" style="--c1:#81b29a;--c2:#3d405b"></div>
+          <h3>Seri ilustrimesh</h3>
+          <p>Ilustrim · Photoshop</p>
+        </article>
+
+        <article class="card" data-category="marketing">
+          <div class="thumb" style="--c1:#f2cc8f;--c2:#81b29a"></div>
+          <h3>Broshurë për agjenci turistike</h3>
+          <p>Broshurë · Illustrator</p>
+        </article>
+
+        <article class="card" data-category="marketing">
+          <div class="thumb" style="--c1:#e07a5f;--c2:#3d405b"></div>
+          <h3>Postime për rrjetet sociale</h3>
+          <p>Marketing · Canva</p>
+        </article>
+
+        <article class="card" data-category="logo">
+          <div class="thumb" style="--c1:#3d405b;--c2:#81b29a"></div>
+          <h3>Logo për startup</h3>
+          <p>Logo · Illustrator</p>
+        </article>
+
+        <article class="card" data-category="ilustrim">
+          <div class="thumb" style="--c1:#f4c95d;--c2:#81b29a"></div>
+          <h3>Ilustrim për poster</h3>
+          <p>Ilustrim · Photoshop</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SHËRBIMET -->
+    <section id="sherbimet" class="section">
+      <h2>Çfarë bëj</h2>
+      <div class="services">
+        <div class="service">
+          <span class="num">01</span>
+          <h3>Logo &amp; identitet</h3>
+          <p>Logo, ngjyra dhe tipografi që i japin markës një fytyrë të qartë.</p>
+        </div>
+        <div class="service">
+          <span class="num">02</span>
+          <h3>Ilustrim</h3>
+          <p>Ilustrime origjinale për fushata, produkte dhe projekte personale.</p>
+        </div>
+        <div class="service">
+          <span class="num">03</span>
+          <h3>Dizajn marketingu</h3>
+          <p>Postime, banera dhe reklama që tërheqin vëmendjen.</p>
+        </div>
+        <div class="service">
+          <span class="num">04</span>
+          <h3>Broshura &amp; print</h3>
+          <p>Broshura, fletëpalosje dhe materiale të gatshme për shtyp.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RRETH MEJE -->
+    <section id="rreth" class="section about">
+      <div class="about-photo">
+        <!-- Vendos foton tënde: images/profili.jpg -->
+        <img src="images/profili.jpg" alt="Emi" onerror="this.style.display='none'">
+      </div>
+      <div>
+        <h2>Rreth meje</h2>
+        <p>Përshëndetje, jam Emi, graphic designer nga Tirana. Punoj me biznese dhe individë për të krijuar dizajne që duken mirë dhe e çojnë mesazhin aty ku duhet.</p>
+        <p>Studioj Informatikë Ekonomike, ndaj e kuptoj si anën kreative ashtu edhe atë të biznesit dhe marketingut.</p>
+        <ul class="tools">
+          <li>Adobe Illustrator</li>
+          <li>Adobe Photoshop</li>
+          <li>Canva</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section contact">
+      <h2>Le të punojmë bashkë</h2>
+      <p class="lead">Ke një projekt në mendje? Më shkruaj dhe të përgjigjem brenda 24 orësh.</p>
+      <a href="mailto:emaili-yt@example.com" class="btn btn-big">emaili-yt@example.com</a>
+      <div class="socials">
+        <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Emi. Të gjitha të drejtat të rezervuara.</p>
+  </footer>
+
+  <script>
+    // Viti aktual në footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Filtrat e punëve (Të gjitha / Logo / Ilustrim / Marketing)
+    const filters = document.querySelectorAll(".filter");
+    const cards = document.querySelectorAll(".card");
+
+    filters.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        filters.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const category = btn.dataset.filter;
+        cards.forEach((card) => {
+          const show = category === "all" || card.dataset.category === category;
+          card.classList.toggle("hidden", !show);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
